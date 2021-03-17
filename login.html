@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    
+    <title>Login & Signup Form</title>
+    <link rel="stylesheet" href="./weather/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="weather/weather.css">
+    <link rel="stylesheet" href="weather/login.css">
+    <link rel="stylesheet" href="weather/navBar.css">
+    <!-- <link rel="stylesheet" href="weather/index.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="icon" href="Images/avatar.png">
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-primary mb-3">
+        <div class="container">
+
+            <a href="#" class="navbar-brand">Weather.JS</a>
+            <img src="Images/avatar.png" id="userIcon">
+        <button onclick="login()" class="btn btn-primary" id="specialBtn" name="login" value="login">Login</button>
+        <button onclick="index()" class="btn btn-primary" id="specialBtn" name="register" value="register">Weather</button>
+       
+        </div>
+    </nav>
+    <div class="wrapper">
+      <div class="title-text">
+        <div class="title login">
+Login Form</div>
+<div class="title signup">
+Signup Form</div>
+</div>
+<div class="form-container">
+        <div class="slide-controls">
+          <input type="radio" name="slide" id="login" checked>
+          <input type="radio" name="slide" id="signup">
+          <label for="login" class="slide login">Login</label>
+          <label for="signup" class="slide signup">Signup</label>
+          <div class="slider-tab">
+</div>
+</div>
+<div class="form-inner">
+          <form action="#" class="login">
+            <div class="field">
+              <input type="text" placeholder="Email Address" required>
+            </div>
+<div class="field">
+              <input type="password" placeholder="Password" required>
+            </div>
+<div class="pass-link">
+<a href="#">Forgot password?</a></div>
+<div class="field btn">
+              <div class="btn-layer">
+</div>
+<input type="submit" value="Login">
+            </div>
+<div class="signup-link">
+Not a member? <a href="">Signup now</a></div>
+</form>
+<form action="#" class="signup">
+            <div class="field">
+              <input type="text" placeholder="Email Address" required>
+            </div>
+<div class="field">
+              <input type="password" placeholder="Password" required>
+            </div>
+<div class="field">
+              <input type="password" placeholder="Confirm password" required>
+            </div>
+<div class="field btn">
+              <div class="btn-layer">
+</div>
+<input type="submit" value="Signup">
+            </div>
+</form>
+</div>
+</div>
+</div>
+<script>
+      const loginText = document.querySelector(".title-text .login");
+      const loginForm = document.querySelector("form.login");
+      const loginBtn = document.querySelector("label.login");
+      const signupBtn = document.querySelector("label.signup");
+      const signupLink = document.querySelector("form .signup-link a");
+      signupBtn.onclick = (()=>{
+        loginForm.style.marginLeft = "-50%";
+        loginText.style.marginLeft = "-50%";
+      });
+      loginBtn.onclick = (()=>{
+        loginForm.style.marginLeft = "0%";
+        loginText.style.marginLeft = "0%";
+      });
+      signupLink.onclick = (()=>{
+        signupBtn.click();
+        return false;
+      });
+    </script>
+
+<footer>
+    <div class="row footerRow ">
+        <div class="cols-md-12 col-lg-3 col-xl-2 ">
+            <h3 id="Foot_copyright" style="display: inline ">&copy; 2021 WeatherApp.lk</h3>
+        </div>
+        <div class="hidden-md-down col-lg-9 col-xl-8 ">
+            <img class="iconF1 " src="Images/callBlue.png " style="display:inline ">
+            <p class="linkF " style="display:inline ">011 23423453</p>
+            <img class="iconF1 " src="Images/webBlue.png " style="display:inline ">
+            <p class="linkF " style="display:inline ">www.WeatherApp.lk</p>
+            <img class="iconF1 " src="Images/placeBlue.png " style="display:inline ">
+            <p class="linkF " style="display:inline ">No.12, Kandy Road, Malabe</p>
+        </div>
+        <div class="hidden-lg-down col-xl-2 ">
+            <a href="https://www.facebook.com "><img id="fb " class="iconF " alt="Facebook " src="Images/facebook.png " onmouseout="this.src='images/facebook.png' " onmouseover="this.src='images/facebookO.png' "></a>
+            <a href="https://www.youtube.com "><img id="yt " class="iconF " alt="YouTube " src="Images/youtube.png " onmouseover="this.src='images/youtubeO.png' " onmouseout="this.src='images/youtube.png' "></a>
+            <a href="https://twitter.com "><img id="tw " class="iconF " alt="Twitter " src="Images/twitter.png " onmouseover="this.src='images/twitterO.png' " onmouseout="this.src='images/twitter.png' "></a>
+            <a href="https://www.instagram.com "><img id="in " class="iconF " alt="Instagram " src="Images/instagram.png " onmouseover="this.src='images/instagramO.png' " onmouseout="this.src='images/instagram.png' "></a>
+        </div>
+    </div>
+
+</footer>
+  </body>
+  <script src="./js/weather.js"></script>
+</html>
