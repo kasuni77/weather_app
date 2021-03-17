@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&family=Red+Hat+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&family=Nosifer&family=Red+Hat+Display&display=swap');
+
+
+/*Footer*/
+
+.footerRow {
+    margin: 0 !important;
+    line-height: 50px;
+    width: 100%;
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    max-height: auto;
+    background-color: #0084ff;
+    color: white;
+    text-align: center;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+#Foot_copyright {
+    font-family: "Roboto";
+    font-size: 17px;
+    color: white;
+}
+
+
+/*Social media icons*/
+
+.iconF1 {
+    height: 20px;
+    width: auto;
+    display: inline;
+    margin-left: 50px;
+    margin-right: 10px;
+    line-height: 50px;
+}
+
+.iconF {
+    height: 25px;
+    width: auto;
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 50px;
+    padding-right: 15px;
+}
+
+#fb,
+#yt,
+#tw,
+#in {
+    position: relative;
+    left: 20px
+}
+
+.linkF {
+    margin-top: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    color: #ffffff;
+}
